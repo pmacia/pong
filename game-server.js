@@ -74,9 +74,14 @@ function initNetworkEngine() {
     io.on('connection', (socket) => {
         console.log(`Nuevo jugador que desea entrar: ${socket.id}`);
 
-        socket.on('new_player', () => {
+        socket.on('new player', () => {
             const numberOfPlayers = Object.keys(players).length;
             onNewPlayer(socket, numberOfPlayers);
+        });
+
+        socket.on('move player', (data) => {
+            let player = players[socket.id];
+            player.y = data;
         });
 
         socket.on('disconnect', () => {
@@ -116,7 +121,7 @@ function getRandomDirection() {
 }
 
 function getPlayer(index) {
-    return Object.values(playes).find(player =>
+    return Object.values(players).find(player =>
         (index === 0 && player.x === 0) || (index !== 0 && player.x !== 0)
     );
 }
@@ -130,7 +135,7 @@ let ball = {};
 
 // Inicializa los objetos dle juego
 // function initGameObjects() {
-function onNewPlayer(scoket, numberOfPlayers) {
+function onNewPlayer(socket, numberOfPlayers) {
     console.log(`Solicitud de juego para ${socket.id}`);
     console.log(`Por el momento había ${numberOfPlayers} jugadores registrados`);
 
