@@ -1,4 +1,4 @@
-# Juego PONG Multijugador
+# Juego PONG Multijugador en Red
 
 Sencillo _**juego PONG Multijugador 2D**_ creado para mostrar el funcionamiento de los _servicios **Websocket**_ para comunicaciones bidireccionales en tiempo real.
 
