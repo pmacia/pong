@@ -109,5 +109,23 @@ v3.0.0 | Juego Pong multijugador en red.
 
 Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios.
 
-* **Paco Maciá** - *Trabajo Inicial* - [pmacia](https://bitbucket.org/pmacia)
+* **Paco Maciá** - *Trabajo Inicial* - [pmacia](https://github.com/pmacia)
+
+---
+
+## 🔐 License
+
+All code and data are released under **Creative Commons Attribution-NonCommercial 4.0 International**. 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Reuse is permitted with citation and acknowledgment of the MAS-MCP City authors.
+
+---
+
+## 🧾 Citation
+
+> F. Maciá-Pérez,
+> *Pong Multijugador en Red. Convirtiendo un juego clásico en Multijugador*,
+> *Universidad de Alicante*, 2025.
+
 
